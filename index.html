@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="css/icons.css">
       <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
       <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <!-- CUSTOM STYLE -->
       <link rel="stylesheet" href="css/template-style.css">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -19,7 +20,7 @@
    <body class="size-1140">
   	 
       <header>
-         <div id="topbar">
+         <div id="topbar" style="margin-top: 0px;">
            <div class="s-12 m-6 l-6" style = "width: 60%; float: left;">
             <div class="line" style="width : 60%; float: left;">
                   <p style = "font-family: Arial, Helvetica, sans-serif;">CONTACT US:  <strong style = "font-family: Arial, Helvetica, sans-serif;">ieeesciitmandi@students.iitmandi.ac.in</strong></p>
@@ -47,7 +48,7 @@
                      <li class="active-item" style= "margin-right:5px; margin-left: 25px;"><a href="#carousel">Home</a></li>
                      <li><a href="#features" style= "margin-right:5px;">News and Events</a></li>
                      <li><a href="#about-us" style= "margin-right:5px;">Why Join IEEE</a></li>
-                     <li><a href="#our-team" style= "margin-right:5px;">Executive Council</a></li>
+                     <li><a href="#Executive_council" style= "margin-right:5px;">Executive Council</a></li>
                      <li><a href="#Gallery" style= "margin-right:5px;">Gallery</a></li>
                      <li><a href="#Achievements" style= "margin-right:5px;">Achievements</a></li>
                      <li><a href="#services" style= "margin-right:5px;">IEEE Societies at IIT Mandi</a></li>
@@ -60,61 +61,36 @@
       </header>  
       <section>
          <!-- CAROUSEL --> 
-         <div id="carousel">
-            <div id="owl-demo" class="owl-carousel owl-theme"> 
-               <div class="item">
-                  <img src="img/iitmandi.jpg" alt="">
-                  <!-- <div class="line">  -->
-                     <!-- <div class="text hide-s"> -->
-                        <!-- <div class="line">  -->
-                          <!-- <div class="prev-arrow hide-s hide-m">
-                             <i class="icon-chevron_left"></i>
-                          </div>
-                          <div class="next-arrow hide-s hide-m">
-                             <i class="icon-chevron_right"></i>
-                          </div> -->
-                        <!-- </div>  -->
-                        <!-- <h2>A Boon Of Opportunities </h2> -->
-                        
-                     <!-- </div> -->
-                  <!-- </div> -->
-               </div>
-               <div class="item">
-                  <img src="img/second.png" alt="">
-                  <!-- <div class="line"> -->
-                     <!-- <div class="text hide-s">  -->
-                        <!-- <div class="line">  -->
-                          <!-- <div class="prev-arrow hide-s hide-m">
-                             <i class="icon-chevron_left"></i>
-                          </div>
-                          <div class="next-arrow hide-s hide-m">
-                             <i class="icon-chevron_right"></i>
-                          </div> -->
-                        <!-- </div>  -->
-                        <!-- <h2>Technology Is Everything In Today's World</h2> -->
-                       
-                     <!-- </div> -->
-                  <!-- </div> -->
-               </div>
-               <div class="item">
-                  <img src="img/first.jpg" alt="">
-                  <!-- <div class="line"> -->
-                     <!-- <div class="text hide-s"> -->
-                        <!-- <div class="line">  -->
-                          <!-- <div class="prev-arrow hide-s hide-m">
-                             <i class="icon-chevron_left"></i>
-                          </div>
-                          <div class="next-arrow hide-s hide-m">
-                             <i class="icon-chevron_right"></i>
-                          </div> -->
-                        <!-- </div>  -->
-                        <!-- <h2>Build new Layout in 10 minutes!</h2> -->
-                        
-                     <!-- </div> -->
-                  <!-- </div> -->
-               </div>
-            </div>
-         </div>
+         <!-- <div id="carousel"> -->
+            <!-- <div id="owl-demo" class="owl-carousel owl-theme">  -->
+ <div class="w3-content w3-section" style="max-width:500px">
+  <p>The w3-animate-fading class animates an element in and out (takes about 10 seconds).</p>
+
+  <img class="mySlides w3-animate-fading" src="img/iitmandi.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/iitmandi.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/iitmandi.jpg" style="width:100%">
+</div>
+<!-- </div> -->
+<!-- </div> -->
+
+<script>
+var myIndex = 0;
+caraousel();
+
+function caraousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(caraousel, 9000);    
+}
+</script>
+
+         <!-- </div> -->
          <!-- FIRST BLOCK -->
          <div id="first-block">
             <div class="line">
@@ -176,8 +152,8 @@ The Institute of Electrical and Electronics Engineers, or IEEE, is the world’s
                </p>
             </article>
          </div>
-         <!-- OUR TEAM -->
-         <div id="our-team">
+         <!-- OUR WORK -->
+         <div id="our-work">
             <div class="line">
                <h2 class="section-title">Our Team</h2>
                <div class="tabs">
