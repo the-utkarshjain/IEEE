@@ -56,6 +56,7 @@ img {
   max-width: none;
   width:100%;
 }
+.animate-fading{animation:fading 6s infinite}@keyframes fading{0%{opacity:0}70%{opacity:1}100%{opacity:0}}
 .owl-nav div {font-family: "mfg";}  
 table {
   background:none repeat scroll 0 0 #fff;
