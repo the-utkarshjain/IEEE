@@ -16,22 +16,21 @@
       <script type="text/javascript" src="js/template-scripts.js"></script> 
 	<style>
 
-
-		.family{
-			width:100%;
-			vertical-align: bottom;
-		}
-		
 		.container{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 			float:left;
 			margin-right: 50px;
+			margin-bottom: 30px;
 			position: relative;
 			width: 300px;
 		}
 
-		.alignment{
-			width:100%;
-			float:left;
+
+		.container::after, .row::after{
+			content: "";
+  			clear: both;
+  			display: table;
+
 		}
 
 		.image{
@@ -114,15 +113,15 @@
       </header> 
       <br><br><br><br><br><br><br>
 
-	 <h2 class="section-title" style="font-size: 30px; font-family: courier;">Developers</h2>
-	<div class="alignment">
-		<div class="container" style="margin-left: 50px;">
-			<img src="img/iitmandi.jpg" alt="image2" class="image">
-			<div class = "overlay">
-				<div class="text">
-					<pre> Tushar jain </pre>
-					<pre> teacher</pre>	
-				</div>
+      <div class="row">
+    <h2 class="section-title" style="font-size: 30px; font-family: courier;">Developers</h2>
+	<div class="container" style="margin-left: 50px;">
+		<img src="img/iitmandi.jpg" alt="image2" class="image">
+		<div class = "overlay">
+			<div class="text">
+				<pre> Tushar jain </pre>
+				<pre> teacher</pre>	
+
 			</div>
 		</div>
 
@@ -135,6 +134,45 @@
 				</div>
 			</div>
 		</div>
+
+	</div>
+	<div class="container">
+		<img src="img/iitmandi.jpg" alt="image2" class="image">
+		<div class = "overlay">
+			<div class="text">
+				<pre> Tushar jain </pre>
+				<pre> teacher</pre>	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- <br><br> -->
+
+
+<div class="row">
+    <h2 class="section-title" style="font-size: 30px; font-family: courier;">Mentors</h2>
+	<div class="container" style="margin-left: 50px;">
+		<img src="img/iitmandi.jpg" alt="image2" class="image">
+		<div class = "overlay">
+			<div class="text">
+				<pre> Tushar jain </pre>
+				<pre> teacher</pre>	
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<img src="img/iitmandi.jpg" alt="image2" class="image">
+		<div class = "overlay">
+			<div class="text">
+				<pre> Tushar jain </pre>
+				<pre> teacher</pre>	
+			</div>
+		</div>
+	</div>
+
 
 		<div class="container">
 			<img src="img/iitmandi.jpg" alt="image2" class="image">
@@ -147,8 +185,8 @@
 		</div>
 	</div>
 
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<p> hI </p>
+</div>
+	
 
 </body>
 </html>
