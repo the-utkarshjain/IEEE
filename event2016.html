@@ -54,7 +54,7 @@
       </style>
   	 
       <header>
-         <div id="topbar" style="margin-top: 0px;">
+         <!-- <div id="topbar" style="margin-top: 0px;">
            <div class="s-12 m-6 l-6" style = "width: 60%; float: left;">
             <div class="line" style="width : 60%; float: left;">
                   <p style = "font-family: Arial, Helvetica, sans-serif;">CONTACT US:  <strong style = "font-family: Arial, Helvetica, sans-serif;">ieeesciitmandi@students.iitmandi.ac.in</strong></p>
@@ -67,31 +67,31 @@
                </div>
                <br>
             </div>  
-         
+          -->
 
-         <nav>
-            <div class="line" style="margin-left: 0px;">
-               <div class="s-12 l-2">
-
-                    <img src=img/ieee_iitmanditemp.jpg>
-                  </a>
-               </div>
-               <div class="top-nav s-12 l-10">
-                  
-                  <ul>
-                    <li class="active-item" style= "margin-right:5px; margin-left: 25px;"><a href="#carousel">Home</a></li>
-                     <li><a href="#features" style= "margin-right:5px;">News and Events</a></li>
-                     <li><a href="#about-us" style= "margin-right:5px;">Why Join IEEE</a></li>
-                     <li><a href="#our-team" style= "margin-right:5px;">Executive Council</a></li>
-                     <li><a href="#Gallery" style= "margin-right:5px;">Gallery</a></li>
-                     <li><a href="#Achievements" style= "margin-right:5px;">Achievements</a></li>
-                     <li><a href="#services" style= "margin-right:5px;">IEEE Societies at IIT Mandi</a></li>
-                     <li><a href="#contact">Contact Us</a></li>
-                   
-                  </ul>
-               </div>
-            </div>
-         </nav>
+		  <nav>
+			<div class="line">
+				<div class="s-12 l-2">
+					<a href="img/ieee_iitmanditemp.jpg" target="=_blank">
+					  <img src=img/ieee_iitmanditemp.jpg>
+					</a>
+				</div>
+				<div class="top-nav s-12 l-10">
+					<p class="nav-text">Custom menu text</p>
+					<ul class="right">
+						<li style= "margin-right:5px; margin-left: 25px;"><a href="index.html#carousel">Home</a></li>
+						<li><a href="index.html#features" style= "margin-right:5px;">News and Events</a></li>
+						<li><a href="index.html#about-us" style= "margin-right:5px;">Why Join IEEE</a></li>
+						<li><a href="index.html#our-team" style= "margin-right:5px;">Executive Council</a></li>
+						<li><a href="index.html#Gallery" style= "margin-right:5px;">Gallery</a></li>
+						<li><a href="index.html#Achievements" style= "margin-right:5px;">Achievements</a></li>
+						<li><a href="index.html#services" style= "margin-right:5px;">IEEE Societies at IIT Mandi</a></li>
+						<li><a href="index.html#contact">Contact Us</a></li>
+					 
+					</ul>
+				</div>
+			</div>
+		</nav>
       </header> ipt type="text/javascript" src="js/jquery-ui.min.js"></script>    
       <script type="text/javascript" src="js/template-scripts.js"></script> 
       <br><br><br><br><br><br><br>
@@ -200,14 +200,17 @@
 		var x = document.getElementsByClassName("toggle");
       var u = x[y];
       $(".toggle").hide("800");
-      $(u).show("800");
+    //   $(u).show("800");
       
-		// if(x[y].style.display=="none")
-		// {
-		// 	x[y].style.display="block";
-		// }
-		// else 
-		// 	x[y].style.display="none";
+		if(x[y].style.display=="none")
+		{
+			$(u).show("800");
+			x[y].style.display="block";
+		}
+		else{
+			$(".toggle").hide("800");
+			// x[y].style.display="none";
+		}
 	}
 </script>
 </head>
