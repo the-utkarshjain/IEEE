@@ -198,12 +198,16 @@
 <script>
 	function Thisfunc(y) {
 		var x = document.getElementsByClassName("toggle");
-		if(x[y].style.display=="none")
-		{
-			x[y].style.display="block";
-		}
-		else 
-			x[y].style.display="none";
+      var u = x[y];
+      $(".toggle").hide("800");
+      $(u).show("800");
+      
+		// if(x[y].style.display=="none")
+		// {
+		// 	x[y].style.display="block";
+		// }
+		// else 
+		// 	x[y].style.display="none";
 	}
 </script>
 </head>
