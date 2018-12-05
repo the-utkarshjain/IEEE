@@ -13,6 +13,7 @@
 .icon-cloud,
 .icon-at,
 
+.icon-industry,
 .icon-plus,
 .icon-minus,
 .icon-arrow_up,
@@ -397,7 +398,7 @@
 .icon-disconnect:before { content: "\F534"; }
 .icon-graph:before { content: "\F535"; }
 .icon-new_user:before { content: "\F536"; }
-
+.icon-industry:before { content: "\f275";}
 
 /* Icon font - Simple Line Icons */
 @font-face {
