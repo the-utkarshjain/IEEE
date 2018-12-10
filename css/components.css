@@ -37,7 +37,7 @@ a.tab-label:hover,a.tab-label.active-btn {
   cursor: default;
 }
 .tab-content {
-  text-align: left;
+  text-align: center;
 }
 @media screen and (max-width:768px) {    
   .tab-nav > .tab-label {
