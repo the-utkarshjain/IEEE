@@ -376,8 +376,8 @@ nav.breadcrumb-nav ul li:last-child:after {content:"";}
   list-style:none outside none;
   padding:0.625rem;
 }
-.margin,.margin2x {display: block;}
-.margin {margin:0 -0.625rem;}
+.margin,.margin2x {display:block;}
+.margin {margin:auto;}
 .margin2x {margin:0 -1.25rem;}
 .line {clear:left;}
 .line .line {padding:0;}
