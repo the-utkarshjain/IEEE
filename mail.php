@@ -19,15 +19,16 @@ require 'class.smtp.php';
   //Set your existing gmail address as user name
   $mail->Username = 'neera99j@gmail.com';
   //Set the password of your gmail address here
-  $mail->Password = '145518110gmail'; //password is removed
+  $mail->Password = 'password'; //password is removed
 
 
   if(!$mail->send()) {
     echo 'Email is not sent.';
     echo 'Email error: ' . $mail->ErrorInfo;
   } else {
-    echo "<script type='text/javascript'>alert('Your Query has been sent.');</script>";
-    header("Location: index.html");
+    echo "<script type='text/javascript'>alert('Your Query has been sent.');
+    window.location.href='index.html';
+    </script>";
   } 
  
 ?>
