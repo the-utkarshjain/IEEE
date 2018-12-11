@@ -9,7 +9,7 @@ require 'class.smtp.php';
   $mail->setFrom('admin@example.com');
   $mail->addAddress($to);
   $mail->Subject = 'Query from the website';
-  $mail->Body = 'Name: '.$name.'\n Email: '.$email.'\n Message: '.$message;
+  $mail->Body = nl2br("Name: $name   \nEmail: $email   \nMessage: $message",false);
   $mail->IsSMTP();
   $mail->SMTPSecure = 'ssl';
   $mail->Host = 'ssl://smtp.gmail.com';
